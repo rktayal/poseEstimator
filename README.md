@@ -4,7 +4,9 @@ The repo includes code for estimating human pose on 2D images/videos. It uses th
 
 ## Inspiration
 pose estimation can be used in variety of applications. <br />
-![my_inspiration](./images/result.png)<br />
+<p align="center">
+	<img src="./images/result.png" />
+</p>
 PS it cool stuff to try your hands on!!
 
 ## Requirements
@@ -57,13 +59,15 @@ then mobilenet_thin is recommended. Default fetches mobilenet_thin.
 if resize value is provided, it will resize images before they are processed. default=0x0 
 (You can try with default value for now)
 Recommends:	432x368 or 656x368 or 1312x736
+
+#### Image Inference
 To initialize the class: 
 ```
 import cv2
 from pose_estimate import PoseEstimator
 obj = PoseEstimator()
 ```
-To infer an image, you can call the `infer` method on previously created object `obj`:
+To infer on an image, you can call the `infer` method on previously created object `obj`:
 ```
 def infer(self, image):
     self.image = image
@@ -86,10 +90,22 @@ obj.infer(image)
 ```
 To get the list of humans(along with their body parts coordinates & confidence score), 
 you can call the `obj.getHumans()` method <br />
-![getHumans](./images/getHumans.png) <br />
+<p align="center">
+	<img src="./images/getHumans.png" />
+</p>
 
 To visually see the result, you can call the `obj.showResults` method <br />
-![showResults](./images/result.png) <br />
+<p align="center">
+	<img src="./images/result.png" />
+</p>
+
+#### Realtime Inference
+`test_poseEstimator.py` will access your webcam & estimate the pose in real time. <br />
+```
+python test_poseEstimator
+```
+FPS value using `mobilenet_thin` is `7~8` <br />
+FPS value using `CMU` is `4~5` <br />
 
 ## References
 - https://github.com/ildoonet/tf-pose-estimation
