@@ -4,7 +4,7 @@ The repo includes code for estimating human pose on 2D images/videos. It uses th
 
 ## Inspiration
 pose estimation can be used in variety of applications. <br />
-[my_inspiration](./images/result.png)<br />
+![my_inspiration](./images/result.png)<br />
 PS it cool stuff to try your hands on!!
 
 ## Requirements
@@ -86,10 +86,10 @@ obj.infer(image)
 ```
 To get the list of humans(along with their body parts coordinates & confidence score), 
 you can call the `obj.getHumans()` method <br />
-[getHumans](./images/getHumans.png) <br />
+![getHumans](./images/getHumans.png) <br />
 
 To visually see the result, you can call the `obj.showResults` method <br />
-[showResults](./images/result.png) <br />
+![showResults](./images/result.png) <br />
 
 ## References
 - https://github.com/ildoonet/tf-pose-estimation
