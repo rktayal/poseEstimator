@@ -3,7 +3,11 @@ The repo includes code for estimating human pose on 2D images/videos. It uses th
 `[ildoonet/tf-pose-estimation]`(https://github.com/ildoonet/tf-pose-estimation)
 
 ## Inspiration
-pose estimation can be used in variety of applications. <br />
+Imagine of identying what a person is doing from an image. OpenPose is a library 
+that does this for us. It gives accurate position and orientation information.
+Pose Estimation can be applied to n number of usecases and build some cool applications using it. <br />
+Few examples where it can be applied to can be self driving cars, in retail, i.e. identifying consumer
+interactions with products, in smartphone gesture based camera applications etc.
 <p align="center">
 	<img src="./images/result.png" />
 </p>
@@ -102,7 +106,12 @@ To visually see the result, you can call the `obj.showResults` method <br />
 #### Realtime Inference
 `test_poseEstimator.py` will access your webcam & estimate the pose in real time. <br />
 ```
-python test_poseEstimator
+python test_pose_estimator.py
+```
+Running it on my PC with hardware spec:
+```
+QuadCore i5 processor
+RAM: 4Gb
 ```
 FPS value using `mobilenet_thin` is `7~8` <br />
 FPS value using `CMU` is `4~5` <br />
