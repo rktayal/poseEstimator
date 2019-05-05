@@ -8,10 +8,13 @@ that does this for us. It gives accurate position and orientation information.
 Pose Estimation can be applied to n number of usecases and build some cool applications using it. <br />
 Few examples where it can be applied to can be self driving cars, in retail, i.e. identifying consumer
 interactions with products, in smartphone gesture based camera applications etc.
+
+
+PS it cool stuff to try your hands on!!<br />
 <p align="center">
-	<img src="./images/result.png" />
-</p>
-PS it cool stuff to try your hands on!!
+	<img src="./images/result.png" width="50%" />
+</p> <br />
+So Let's get started!!
 
 ## Requirements
 ```
@@ -92,13 +95,22 @@ on image frame
 image = cv2.imread('images/two.JPG')
 obj.infer(image)
 ```
+<br />
 To get the list of humans(along with their body parts coordinates & confidence score), 
 you can call the `obj.getHumans()` method <br />
+```
+obj.getHumans()
+```
+<br />
 <p align="center">
 	<img src="./images/getHumans.png" />
 </p>
-
+<br />
 To visually see the result, you can call the `obj.showResults` method <br />
+```
+obj.showResults()
+```
+<br />
 <p align="center">
 	<img src="./images/result.png" />
 </p>
