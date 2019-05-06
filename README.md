@@ -12,7 +12,7 @@ interactions with products, in smartphone gesture based camera applications etc.
 
 PS it cool stuff to try your hands on!!<br />
 <p align="center">
-	<img src="./images/result.png" width="50%" />
+	<img src="./images/fancy.png" />
 </p> <br />
 So Let's get started!!
 
